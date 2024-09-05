@@ -1,0 +1,118 @@
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  button {
+    align-self: flex-start;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #bbb; /* Bordes más claros */
+}
+
+.custom-table th {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    font-weight: bold;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color gris claro para filas alternas */
+}
+
+.custom-table tr:hover {
+    background-color: #e0e0e0; /* Color gris más oscuro al pasar el ratón */
+}
+
+.custom-table .status-cell {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.custom-table .status-open {
+    background-color: #ff4d4d; /* Rojo claro */
+}
+
+.custom-table .status-closed {
+    background-color: #4caf50; /* Verde para estados cerrados */
+}
+
+.custom-table .status-pending {
+    background-color: #ff9800; /* Naranja para estados pendientes */
+}
+
+/* Estilo para el botón en la primera columna */
+.custom-table .action-button {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.custom-table .action-button:hover {
+    background-color: #002244; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Opcional: Estilo para los encabezados de columna con colores específicos */
+.custom-table th.column-feEmis,
+.custom-table th.column-feLleg {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+}
+
+.custom-table td.column-feEmis,
+.custom-table td.column-feLleg {
+    color: #333;
+}
+
+/* Opcional: Estilo para los bordes de la tabla */
+.custom-table {
+    border: 2px solid #003366; /* Azul oscuro para el borde de la tabla */
+}
+
+.custom-table td,
+.custom-table th {
+    border-color: #bbb; /* Bordes más claros */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button i {
+    color: #007bff;
+}
